@@ -1,0 +1,24 @@
+body {
+  padding: 0;
+  padding-left: 250px;
+  margin: 0;
+}
+
+main {
+
+}
+
+nav {
+  width: 250px;
+  height: 100vh;
+  border: 1px solid black;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
