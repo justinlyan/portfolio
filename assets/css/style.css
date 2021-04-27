@@ -1,24 +1,114 @@
+/* || GENERAL STYLES */
+
+:root {
+  /* from: https://colors.muz.li/palette/122c91/2a6fdb/48d6d2/81e9e6/fefcbf */
+  --dark-blue: #122c91;
+  --blue: #2a6fdb;
+  --green: #48d6d2;
+  --light-green: #81e9e6;
+  --yellow: #fefcbf;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
-  padding: 0;
   padding-left: 250px;
-  margin: 0;
+  background-image: url("../images/dot-grid.png");
 }
 
-main {
-
-}
+/* || NAVIGATION BAR */
 
 nav {
   width: 250px;
   height: 100vh;
-  border: 1px solid black;
+  box-shadow: 2px 0px 10px black;
   text-align: center;
   position: fixed;
   top: 0;
   left: 0;
+  background: rgb(255, 255, 255)
+}
+
+.title {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(212, 209, 209, 0.5);
 }
 
 nav ul {
   list-style: none;
   padding: 0;
+}
+
+nav ul a {
+  display: flex;
+  align-items: center;
+  color: rgb(0,0,0);
+}
+
+nav ul a:hover {
+  background-color: rgba(212, 209, 209, 0.5);
+}
+
+nav li {
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.fas {
+  font-size: 1.5em;
+  padding-right: 30px;
+}
+
+h1 {
+  color: var(--dark-blue);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h1 a:visited {
+  color: var(--dark-blue);
+}
+
+/* || MAIN CONTENT */
+
+main {
+
+}
+
+.page-title {
+  text-align: center;
+  font-size: 3rem;
+  background-color: var(--blue);
+  color: white;
+  font-weight: 300;
+  line-height: 5vh;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.section-content {
+  width: 50vw;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.intro {
+  height: 95vh;
 }
